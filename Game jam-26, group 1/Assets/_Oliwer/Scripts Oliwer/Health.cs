@@ -2,11 +2,12 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    [Header("Shared Varible")]
-    public float _health = 100;
+    [Header("Shared Variables")]
+    public float _health = 100f;
+    public bool _isDead = false;
 
-    [Header("Script Varible")]
-    public float _doDamage;
+    [Header("Script Variables")]
+    public float _doDamage = 10f;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -17,5 +18,3 @@ public class Health : MonoBehaviour
         }
     }
 }
-
-//This hurts the object for the set damage when touching the Player.
