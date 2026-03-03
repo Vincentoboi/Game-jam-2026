@@ -34,7 +34,10 @@ public class PlayerMove : MonoBehaviour
         }
         float x = Input.GetAxis("Horizontal"); //Gå med WASD
         float z = Input.GetAxis("Vertical"); // -.- 
+        print($"X: {x} Z: {z}");
+        z = 1;
         Vector3 move = transform.right * x + transform.forward * z; //Rör sig i den riktningen som player också tittar i
+        print($"move: {move}");
         controller.Move(move * _moveSpeed * Time.deltaTime); //Ref till vår charactercontroller som driver vår player + låter oss röra på oss
 
         if (Input.GetButtonDown("Jump") && _isGrounded)
