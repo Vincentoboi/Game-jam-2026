@@ -4,15 +4,38 @@ using UnityEngine.AI;
 
 public class RunAway : MonoBehaviour
 {
+    [SerializeField] private NavMeshAgent agent = null;
+
     [SerializeField] private Transform chaser = null;
-    private void OnDrawGizmos()
+
+    [SerializeField] private float displacementDist = 5f;
+
+
+    void Start()
     {
-        Gizmos.color = Color.red;
+        if (agent == null)
+        {
+            if (TryGetComponent(out agent))
+            {
+                Debug.LogWarning(name + " needs a navmesh agent");
+            }
+        }
+    }
 
-        Vector3 direction = (chaser.position - transform.position).normalized; //direction is turned into one value
-        float mag = direction.magnitude; //will become one
-        print(mag);
+    private void Update()
+    {
+        if (chaser == null)
+        {
+            return;
+        }
+        Vector3 normDir = (chaser.position - transform.position).normalized;
 
-        Gizmos.DrawLine(transform.position, transform.position - direction);
+        MoveToPos(transform.position - (normDir * displacementDist));
+    }
+
+    private void MoveToPos(Vector3 pos)
+    {
+        agent.SetDestination(pos);
+        agent.isStopped = false;
     }
 }
