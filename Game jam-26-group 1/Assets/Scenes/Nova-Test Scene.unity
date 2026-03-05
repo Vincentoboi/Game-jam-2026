@@ -8724,6 +8724,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1125237927}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1155361762 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6725769686802682669, guid: d3f248e370010f1468ebcdec302fbfd5, type: 3}
+  m_PrefabInstance: {fileID: 1117243475}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53df8f232129db942938902d5ca93c0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1157580609
 GameObject:
   m_ObjectHideFlags: 0
@@ -14755,6 +14766,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1933806216826644791, guid: cac6718746d6ede4bb893d6c5b78c196, type: 3}
+      propertyPath: _playerAnimScript
+      value: 
+      objectReference: {fileID: 1155361762}
     - target: {fileID: 5825937392296124603, guid: cac6718746d6ede4bb893d6c5b78c196, type: 3}
       propertyPath: m_Name
       value: Blueberry
@@ -14765,7 +14780,7 @@ PrefabInstance:
       objectReference: {fileID: 1895476445}
     - target: {fileID: 7944745327349363542, guid: cac6718746d6ede4bb893d6c5b78c196, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.1
+      value: 5.5
       objectReference: {fileID: 0}
     - target: {fileID: 7944745327349363542, guid: cac6718746d6ede4bb893d6c5b78c196, type: 3}
       propertyPath: m_LocalPosition.y
@@ -14773,7 +14788,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7944745327349363542, guid: cac6718746d6ede4bb893d6c5b78c196, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.1
+      value: -1.8
       objectReference: {fileID: 0}
     - target: {fileID: 7944745327349363542, guid: cac6718746d6ede4bb893d6c5b78c196, type: 3}
       propertyPath: m_LocalRotation.w
@@ -14818,7 +14833,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1501324337474040648, guid: 4b4feb1a42ab5264bb800a616ba365eb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.81
+      value: 8.7
       objectReference: {fileID: 0}
     - target: {fileID: 1501324337474040648, guid: 4b4feb1a42ab5264bb800a616ba365eb, type: 3}
       propertyPath: m_LocalPosition.y
@@ -14826,7 +14841,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1501324337474040648, guid: 4b4feb1a42ab5264bb800a616ba365eb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -12.8
+      value: -14
       objectReference: {fileID: 0}
     - target: {fileID: 1501324337474040648, guid: 4b4feb1a42ab5264bb800a616ba365eb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -14860,6 +14875,10 @@ PrefabInstance:
       propertyPath: chaser
       value: 
       objectReference: {fileID: 1895476445}
+    - target: {fileID: 5609034802783993403, guid: 4b4feb1a42ab5264bb800a616ba365eb, type: 3}
+      propertyPath: _playerAnimScript
+      value: 
+      objectReference: {fileID: 1155361762}
     - target: {fileID: 8503850681318022203, guid: 4b4feb1a42ab5264bb800a616ba365eb, type: 3}
       propertyPath: m_Name
       value: Bannan
@@ -14887,7 +14906,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8375213677229353426, guid: 6b709d153cfc1b042b0130318431cc44, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.31
+      value: 4.6
       objectReference: {fileID: 0}
     - target: {fileID: 8375213677229353426, guid: 6b709d153cfc1b042b0130318431cc44, type: 3}
       propertyPath: m_LocalPosition.y
@@ -14895,7 +14914,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8375213677229353426, guid: 6b709d153cfc1b042b0130318431cc44, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.8
+      value: 14.3
       objectReference: {fileID: 0}
     - target: {fileID: 8375213677229353426, guid: 6b709d153cfc1b042b0130318431cc44, type: 3}
       propertyPath: m_LocalRotation.w
@@ -14925,6 +14944,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8563773781412675059, guid: 6b709d153cfc1b042b0130318431cc44, type: 3}
+      propertyPath: _playerAnimScript
+      value: 
+      objectReference: {fileID: 1155361762}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14938,9 +14961,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 184579642245168080, guid: b428a0ad5cccd374285f0ef836f9426f, type: 3}
+      propertyPath: _playerAnimScript
+      value: 
+      objectReference: {fileID: 1155361762}
     - target: {fileID: 582182376000221138, guid: b428a0ad5cccd374285f0ef836f9426f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.3
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 582182376000221138, guid: b428a0ad5cccd374285f0ef836f9426f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -14948,7 +14975,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 582182376000221138, guid: b428a0ad5cccd374285f0ef836f9426f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.8
+      value: -1.6
       objectReference: {fileID: 0}
     - target: {fileID: 582182376000221138, guid: b428a0ad5cccd374285f0ef836f9426f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -14977,10 +15004,6 @@ PrefabInstance:
     - target: {fileID: 582182376000221138, guid: b428a0ad5cccd374285f0ef836f9426f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3054465839745559195, guid: b428a0ad5cccd374285f0ef836f9426f, type: 3}
-      propertyPath: _health
-      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 5516030917719528536, guid: b428a0ad5cccd374285f0ef836f9426f, type: 3}
       propertyPath: chaser
