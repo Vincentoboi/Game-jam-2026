@@ -2261,13 +2261,13 @@ GameObject:
   - component: {fileID: 370948905}
   - component: {fileID: 370948904}
   - component: {fileID: 370948903}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Hospital layout 1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &370948903
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9131,7 +9131,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1270163785802494610, guid: d3f248e370010f1468ebcdec302fbfd5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.1
+      value: 148.4
       objectReference: {fileID: 0}
     - target: {fileID: 1270163785802494610, guid: d3f248e370010f1468ebcdec302fbfd5, type: 3}
       propertyPath: m_LocalPosition.y
