@@ -17,4 +17,11 @@ public class Health : MonoBehaviour
             print("ouch!");
         }
     }
+    private void Update()
+    {
+        if (_health == 0)
+        {
+            Destroy(gameObject);
+        }
+    }
 }
