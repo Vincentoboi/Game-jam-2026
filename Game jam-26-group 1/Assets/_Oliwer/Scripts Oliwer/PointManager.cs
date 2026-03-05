@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PointSystem : MonoBehaviour
+public class PointManager : MonoBehaviour
 {
     [Header("Points")]
     public int _CurrentPoints = 0;

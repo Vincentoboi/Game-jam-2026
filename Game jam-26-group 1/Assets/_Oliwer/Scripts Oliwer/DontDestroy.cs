@@ -1,0 +1,33 @@
+using UnityEngine;
+
+public class DontDestroy : MonoBehaviour
+{
+    private static GameObject[] persistentObjects = new GameObject[3];
+    public int objectIndex;
+
+    void Awake()
+    {
+        if (persistentObjects[objectIndex] == null)
+        {
+            persistentObjects[objectIndex] = gameObject;
+            DontDestroyOnLoad(gameObject);
+        }
+        else if (persistentObjects[objectIndex] != gameObject)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    public static void ResetPersistentObjects()
+    {
+        for (int i = 0; i < persistentObjects.Length; i++)
+        {
+            if (persistentObjects[i] != null)
+            {
+                Destroy(persistentObjects[i]);
+                persistentObjects[i] = null;
+            }
+        }
+    }
+}
+////https://www.youtube.com/watch?v=hzdADY2LkJU 

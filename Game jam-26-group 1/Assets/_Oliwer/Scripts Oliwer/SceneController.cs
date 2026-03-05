@@ -21,6 +21,14 @@ public class SceneController: MonoBehaviour
     {
         SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
     }
+    public void TransitionLevel()
+    {
+        SceneManager.LoadScene(1);
+    }
+    public void StartScreen()
+    {
+        SceneManager.LoadScene(0);
+    }
 
     public void LoadScene(string sceneName)
     {
