@@ -5,9 +5,9 @@
             <ui:Label text="Main Menu" name="MainMenuHeaderLabel" style="font-size: 70px; color: rgb(239, 159, 159); -unity-text-align: middle-center; -unity-font-style: bold;" />
             <ui:VisualElement style="flex-grow: 0; height: 2px; background-color: rgb(255, 172, 172); margin-top: 5px;" />
             <ui:VisualElement name="ButtonContainer" style="flex-grow: 1; align-items: center; justify-content: center;">
-                <ui:Button text="Start" name="StartButton" class="main-menu-button" />
-                <ui:Button text="Controlls" name="ControllsButton" class="main-menu-button" />
-                <ui:Button text="Exit" name="ExitButton" class="main-menu-button" />
+                <ui:Button text="Start" name="StartButton" class="main-menu-button start-button" />
+                <ui:Button text="Controlls" name="ControllsButton" class="main-menu-button controlls-button" />
+                <ui:Button text="Exit" name="ExitButton" class="main-menu-button exit-button" />
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>

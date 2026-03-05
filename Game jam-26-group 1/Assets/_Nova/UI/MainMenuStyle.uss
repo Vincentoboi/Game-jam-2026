@@ -23,5 +23,26 @@
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.48);
 }
 
-.settings-button {
+.controlls-button {
+    background-color: rgba(255, 255, 255, 0.34);
+}
+
+.controlls-button:hover {
+    background-color: rgba(151, 151, 151, 0.34);
+}
+
+.start-button {
+    background-color: rgba(255, 255, 255, 0.34);
+}
+
+.start-button:hover {
+    background-color: rgba(151, 151, 151, 0.34);
+}
+
+.exit-button {
+    background-color: rgba(255, 255, 255, 0.34);
+}
+
+.exit-button:hover {
+    background-color: rgba(151, 151, 151, 0.34);
 }
