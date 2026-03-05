@@ -25,6 +25,10 @@ public class SceneController: MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+    public void StartScreen()
+    {
+        SceneManager.LoadScene(0);
+    }
 
     public void LoadScene(string sceneName)
     {

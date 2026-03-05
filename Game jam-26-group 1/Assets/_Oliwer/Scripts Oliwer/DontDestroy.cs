@@ -17,5 +17,17 @@ public class DontDestroy : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    public static void ResetPersistentObjects()
+    {
+        for (int i = 0; i < persistentObjects.Length; i++)
+        {
+            if (persistentObjects[i] != null)
+            {
+                Destroy(persistentObjects[i]);
+                persistentObjects[i] = null;
+            }
+        }
+    }
 }
-//https://www.youtube.com/watch?v=hzdADY2LkJU 
+////https://www.youtube.com/watch?v=hzdADY2LkJU 
