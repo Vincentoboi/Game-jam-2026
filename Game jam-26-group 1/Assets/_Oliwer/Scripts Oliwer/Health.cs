@@ -21,7 +21,7 @@ public class Health : MonoBehaviour
     {
         if (_health == 0)
         {
-            Destroy(transform.parent);
+            Destroy(gameObject);
         }
     }
 }
