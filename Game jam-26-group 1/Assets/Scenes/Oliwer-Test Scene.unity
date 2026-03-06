@@ -946,6 +946,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53df8f232129db942938902d5ca93c0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &244477015 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3238475017064450942, guid: d3f248e370010f1468ebcdec302fbfd5, type: 3}
+  m_PrefabInstance: {fileID: 3095168278404009858}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &320617602
 GameObject:
   m_ObjectHideFlags: 0
@@ -2719,6 +2724,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3238475017064450942, guid: d3f248e370010f1468ebcdec302fbfd5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3490381120819717415, guid: d3f248e370010f1468ebcdec302fbfd5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8406094137298163286, guid: d3f248e370010f1468ebcdec302fbfd5, type: 3}
       propertyPath: m_Name
       value: Player
@@ -2728,6 +2741,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3f248e370010f1468ebcdec302fbfd5, type: 3}
+--- !u!95 &3095168278404009859 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5829950807153659647, guid: d3f248e370010f1468ebcdec302fbfd5, type: 3}
+  m_PrefabInstance: {fileID: 3095168278404009858}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4043128143698134377
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2780,6 +2798,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6132497193689911563, guid: f1fef244be0df7c48832558d800b861e, type: 3}
+      propertyPath: _playerAnim
+      value: 
+      objectReference: {fileID: 244477015}
+    - target: {fileID: 6132497193689911563, guid: f1fef244be0df7c48832558d800b861e, type: 3}
+      propertyPath: anim.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6132497193689911563, guid: f1fef244be0df7c48832558d800b861e, type: 3}
+      propertyPath: 'anim.Array.data[0]'
+      value: 
+      objectReference: {fileID: 3095168278404009859}
     - target: {fileID: 6132497193689911563, guid: f1fef244be0df7c48832558d800b861e, type: 3}
       propertyPath: _pointManagerScript
       value: 

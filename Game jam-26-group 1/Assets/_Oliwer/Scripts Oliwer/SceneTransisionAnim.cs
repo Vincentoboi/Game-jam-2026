@@ -1,17 +1,56 @@
-using System.Net;
 using UnityEngine;
+using System.Collections;
 
 public class SceneTransisionAnim : MonoBehaviour
 {
-    public PointManager _pointManagerScript;
+    public Animator _playerAnim;
+    public PointManager _pointManagerScript; // kept exactly as you asked
 
-    // Update is called once per frame
+    void Start()
+    {
+        // Keep animator off so it doesn't override movement
+        _playerAnim.enabled = false;
+    }
+
     void Update()
     {
-        
         if (Input.GetKeyDown(KeyCode.K))
         {
-            SceneController._instance.TransitionLevel();
+            PlayTransitionAnimation();
         }
+    }
+
+    void PlayTransitionAnimation()
+    {
+        // Enable animator only when needed
+        _playerAnim.enabled = true;
+
+        // Play your animation from the start
+        _playerAnim.Play("SceneTranstion", 0, 0f);
+
+        // Call your scene transition
+        SceneController._instance.TransitionLevel();
+
+        // Find the animation length
+        float animLength = 0f;
+        foreach (var clip in _playerAnim.runtimeAnimatorController.animationClips)
+        {
+            if (clip.name == "SceneTranstion")
+            {
+                animLength = clip.length;
+                break;
+            }
+        }
+
+        // Disable animator after animation finishes
+        StartCoroutine(DisableAnimatorAfter(animLength));
+    }
+
+    IEnumerator DisableAnimatorAfter(float time)
+    {
+        yield return new WaitForSeconds(time);
+
+        // Turn animator off again so movement works
+        _playerAnim.enabled = false;
     }
 }
