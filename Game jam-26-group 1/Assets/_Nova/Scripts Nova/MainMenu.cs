@@ -34,7 +34,7 @@ public class MainMenu : MonoBehaviour// script done by Nova
 
     private void PlayGame()
     {
-        SceneManager.LoadScene("TransitionLevel");//goes to new scene when pressing the start button
+        SceneManager.LoadScene("Level 2-1");//goes to new scene when pressing the start button
     }
 
     private void ExitGame()
