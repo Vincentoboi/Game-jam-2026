@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
@@ -28,6 +29,7 @@ public class MainMenu : MonoBehaviour// script done by Nova
     private void ShowControllsMenu()
     {
         print("show settings menu");
+        
     }
 
     private void PlayGame()
