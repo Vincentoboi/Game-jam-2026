@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4692964580074898371}
   - component: {fileID: 6132497193689911563}
   - component: {fileID: 9012281024267149354}
+  - component: {fileID: 6862383758068385823}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -72,3 +73,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pointManagerScript: {fileID: 0}
+--- !u!114 &6862383758068385823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769919019572396268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b7c3e58a9982014987f90ae297c1654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectIndex: 2
