@@ -6,7 +6,6 @@ public class FinishPoint : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            // Go to next level
             SceneController._instance.NextLevel();
         }
     }
