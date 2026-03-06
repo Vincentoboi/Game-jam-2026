@@ -29,6 +29,9 @@
 
 .controlls-button:hover {
     background-color: rgba(151, 151, 151, 0.34);
+    transition-timing-function: ease;
+    transition-duration: 0s;
+    transition-property: all;
 }
 
 .start-button {
