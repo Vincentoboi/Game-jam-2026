@@ -59,6 +59,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5717573776e62de49aa95cb88428b577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerAnim: {fileID: 0}
   _pointManagerScript: {fileID: 0}
 --- !u!114 &9012281024267149354
 MonoBehaviour:

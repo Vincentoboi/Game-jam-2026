@@ -520,7 +520,7 @@ GameObject:
   - component: {fileID: 5146243204063157424}
   - component: {fileID: 19479701106693410}
   - component: {fileID: 3238475017064450942}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -616,7 +616,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8406094137298163286}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 3e755273084314f468b49a46bacb2631, type: 2}
   m_CullingMode: 0
@@ -905,6 +905,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9db723e788c48c74ca056865c534f6b3, type: 3}
       propertyPath: m_Name
       value: justdoorwithhandles
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9db723e788c48c74ca056865c534f6b3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8091132604151060672, guid: 9db723e788c48c74ca056865c534f6b3, type: 3}
       propertyPath: m_LocalScale.y
