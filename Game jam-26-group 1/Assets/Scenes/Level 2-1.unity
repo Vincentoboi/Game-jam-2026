@@ -2413,6 +2413,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1117243476}
     - target: {fileID: 6132497193689911563, guid: f1fef244be0df7c48832558d800b861e, type: 3}
+      propertyPath: _finishPointScript
+      value: 
+      objectReference: {fileID: 1276011332}
+    - target: {fileID: 6132497193689911563, guid: f1fef244be0df7c48832558d800b861e, type: 3}
       propertyPath: _pointManagerScript
       value: 
       objectReference: {fileID: 358200685}
@@ -17438,6 +17442,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2270067663252798473, guid: a3b84e903005ce546b87791cea43047a, type: 3}
+      propertyPath: _TransitionSelected
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7139247786525528503, guid: a3b84e903005ce546b87791cea43047a, type: 3}
       propertyPath: m_Name
       value: FinishPoint
@@ -17879,6 +17887,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1275326637}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1276011332 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2270067663252798473, guid: a3b84e903005ce546b87791cea43047a, type: 3}
+  m_PrefabInstance: {fileID: 1242696891}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f3ae01eb8a793a44b5c2aa16a2cb229, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1293133407
 GameObject:
   m_ObjectHideFlags: 0
@@ -29917,8 +29936,8 @@ SceneRoots:
   - {fileID: 996436603}
   - {fileID: 948590758}
   - {fileID: 1175768006}
-  - {fileID: 1242696891}
   - {fileID: 1117243475}
+  - {fileID: 1242696891}
   - {fileID: 358200684}
   - {fileID: 205091961}
   - {fileID: 8524353795864681314}

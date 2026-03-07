@@ -23,10 +23,10 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    public void TransitionLevel()
-    {
-        SceneManager.LoadScene(1); //build index starts at 0
-    }
+    //public void TransitionLevel()
+    //{
+    //    SceneManager.LoadScene(1); //build index starts at 0
+    //}
 
     public void StartScreen()
     {

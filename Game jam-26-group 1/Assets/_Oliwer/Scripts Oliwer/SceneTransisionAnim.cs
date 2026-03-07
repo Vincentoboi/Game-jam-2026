@@ -5,6 +5,7 @@ public class SceneTransisionAnim : MonoBehaviour
 {
     public Animator _playerAnim;
     public PointManager _pointManagerScript; // kept exactly as you asked
+    public FinishPoint _finishPointScript;
 
     void Start()
     {
@@ -14,7 +15,7 @@ public class SceneTransisionAnim : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.K))
+        if (_finishPointScript._transitionScene)
         {
             PlayTransitionAnimation();
         }
@@ -27,9 +28,6 @@ public class SceneTransisionAnim : MonoBehaviour
 
         // Play your animation from the start
         _playerAnim.Play("SceneTranstion", 0, 0f);
-
-        // Call your scene transition
-        SceneController._instance.TransitionLevel();
 
         // Find the animation length
         float animLength = 0f;
