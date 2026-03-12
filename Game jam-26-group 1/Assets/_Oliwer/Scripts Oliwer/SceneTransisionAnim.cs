@@ -5,7 +5,7 @@ public class SceneTransisionAnim : MonoBehaviour
 {
     public Animator _playerAnim;
     public PointManager _pointManagerScript; // kept exactly as you asked
-    public FinishPoint _finishPointScript;
+    
 
     void Start()
     {
@@ -15,6 +15,8 @@ public class SceneTransisionAnim : MonoBehaviour
 
     void Update()
     {
+        FinishPoint _finishPointScript = FindAnyObjectByType<FinishPoint>();
+
         if (_finishPointScript._transitionScene)
         {
             print("PlayTransAnim");
