@@ -17,6 +17,7 @@ public class SceneTransisionAnim : MonoBehaviour
     {
         if (_finishPointScript._transitionScene)
         {
+            print("PlayTransAnim");
             PlayTransitionAnimation();
         }
     }
