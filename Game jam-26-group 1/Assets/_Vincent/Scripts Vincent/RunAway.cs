@@ -21,6 +21,9 @@ public class RunAway : MonoBehaviour
     [SerializeField] private Transform chaser = null;
     [SerializeField] private float displacementDist = 5f;
 
+    public bool scream = false;
+
+
     void Start()
     {
         player = GameObject.Find("Player");
@@ -36,19 +39,27 @@ public class RunAway : MonoBehaviour
     {
         playerInSight = Physics.CheckSphere(transform.position, sightRange, playerLayer);
 
-        if (!playerInSight) Wandering();
-        if (playerInSight) Run();
+        if (!playerInSight)
+        {
+            scream = false;
+            Wandering();
+        }
+        if (playerInSight)
+        {
+            scream = true;
+            Run();
+        }
     }
 
     private void Run()
     {
         if (chaser == null)
         {
-                return;
+            return;
         }
-            Vector3 normDir = (chaser.position - transform.position).normalized;        
+            Vector3 normDir = (chaser.position - transform.position).normalized;  
             //normDir = Quaternion.AngleAxis(45, Vector3.up) * normDir;
-            MoveToPos(transform.position - (normDir * displacementDist));
+            MoveToPos(transform.position - (normDir * displacementDist));            
     }
 
 
