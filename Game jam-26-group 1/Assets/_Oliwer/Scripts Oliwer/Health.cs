@@ -15,7 +15,7 @@ public class Health : MonoBehaviour
 
     private void Update()
     {
-        if (_health <= 0 && _playerAnimScript._isAttacking)
+        if (_health <= 0)
         {
             Destroy(gameObject);
         }
@@ -23,7 +23,7 @@ public class Health : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Knife"))
         {
             _health -= _doDamage;
             print("ouch!");
