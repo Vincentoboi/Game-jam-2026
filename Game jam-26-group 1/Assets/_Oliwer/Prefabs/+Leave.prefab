@@ -228,7 +228,7 @@ GameObject:
   - component: {fileID: 3131965965265564134}
   - component: {fileID: 6210049279362613668}
   - component: {fileID: 5345100371723100053}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Transition screen (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1804,7 +1804,7 @@ GameObject:
   - component: {fileID: 9055766678473546426}
   - component: {fileID: 2076413820714972975}
   - component: {fileID: 5153953303969181369}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Transition screen (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3031,9 +3031,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6518722494782420978, guid: 8cdec77b29bf3844aa38d7035a336b02, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6717732163998300359, guid: 8cdec77b29bf3844aa38d7035a336b02, type: 3}
       propertyPath: m_Name
       value: trashbin
+      objectReference: {fileID: 0}
+    - target: {fileID: 6717732163998300359, guid: 8cdec77b29bf3844aa38d7035a336b02, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
