@@ -624,6 +624,10 @@ PrefabInstance:
       propertyPath: chaser
       value: 
       objectReference: {fileID: 180869667}
+    - target: {fileID: 5516030917719528536, guid: b428a0ad5cccd374285f0ef836f9426f, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1987582004}
     - target: {fileID: 7508034603237357188, guid: b428a0ad5cccd374285f0ef836f9426f, type: 3}
       propertyPath: m_Name
       value: Apple
@@ -817,6 +821,8 @@ MonoBehaviour:
   agent: {fileID: 447523687}
   chaser: {fileID: 180869667}
   displacementDist: 5
+  shout: 
+  script: {fileID: 0}
 --- !u!195 &447523687
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2074,6 +2080,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0243ae6e9e001fa48afd1cd0737be292, type: 3}
   - {fileID: 8300000, guid: 21722b20496f69f429d812843316e0b7, type: 3}
   - {fileID: 8300000, guid: 562b44970e8cda04ca5ed0a49bd40140, type: 3}
+  timeLeft: 1
 --- !u!82 &1987582005
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2179,7 +2186,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1987582003}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.1, y: 1.3598566, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
