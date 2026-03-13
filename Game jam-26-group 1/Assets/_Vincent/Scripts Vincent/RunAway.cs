@@ -21,7 +21,7 @@ public class RunAway : MonoBehaviour
     [SerializeField] private Transform chaser = null;
     [SerializeField] private float displacementDist = 5f;
 
-    public string shout;
+
     public AudioRandomizer script; 
     
 
@@ -39,6 +39,7 @@ public class RunAway : MonoBehaviour
     }
     private void Update()
     {
+        
         playerInSight = Physics.CheckSphere(transform.position, sightRange, playerLayer);
 
         if (!playerInSight)
