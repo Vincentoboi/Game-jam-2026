@@ -618,7 +618,7 @@ PrefabInstance:
     - target: {fileID: 6132497193689911563, guid: f1fef244be0df7c48832558d800b861e, type: 3}
       propertyPath: _finishPointScript
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1005059431}
     - target: {fileID: 6132497193689911563, guid: f1fef244be0df7c48832558d800b861e, type: 3}
       propertyPath: _pointManagerScript
       value: 
@@ -3611,35 +3611,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: FinishPoint
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2270067663252798473, guid: a3b84e903005ce546b87791cea43047a, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7139247786525528503, guid: a3b84e903005ce546b87791cea43047a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1005059432}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3b84e903005ce546b87791cea43047a, type: 3}
 --- !u!4 &1005059430 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2198196778799559395, guid: a3b84e903005ce546b87791cea43047a, type: 3}
   m_PrefabInstance: {fileID: 1005059429}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1005059431 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7139247786525528503, guid: a3b84e903005ce546b87791cea43047a, type: 3}
+--- !u!114 &1005059431 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2270067663252798473, guid: a3b84e903005ce546b87791cea43047a, type: 3}
   m_PrefabInstance: {fileID: 1005059429}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1005059432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1005059431}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f777a44adef3d942ad90bf7f477e8c4, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f3ae01eb8a793a44b5c2aa16a2cb229, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1014725166
