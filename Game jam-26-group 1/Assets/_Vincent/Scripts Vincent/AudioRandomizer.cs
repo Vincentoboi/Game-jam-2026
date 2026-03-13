@@ -1,6 +1,3 @@
-using UnityEditor;
-using UnityEditor.ShortcutManagement;
-using UnityEditor.VersionControl;
 using UnityEngine;
 
 public class AudioRandomizer : MonoBehaviour
