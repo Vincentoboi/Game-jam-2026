@@ -5,9 +5,6 @@ public class PlayerAnim : MonoBehaviour
     [Header("Needed Utils")]
     public Animator anim;
 
-    [Header("Shared Bools")]
-    public bool _isAttacking = false;
-
     [Header("Take From Scripts")]
     public PlayerMove _playerMoveScript;
 
@@ -19,15 +16,9 @@ public class PlayerAnim : MonoBehaviour
         _moveSpeed = _playerMoveScript._moveSpeed;
 
 
-        // BLOCK ALL INPUT DURING ANIMATIONS
-        if (_isAttacking)
-            return;
-
         // Attack
         if (Input.GetButton("Fire1"))
         {
-            _isAttacking = true;
-
             anim.SetTrigger("Attack");
         }
 
@@ -45,10 +36,5 @@ public class PlayerAnim : MonoBehaviour
         {
             anim.SetTrigger("PlayerIdle");
         }
-    }
-
-    public void ResetAtacking()
-    {
-        _isAttacking = false;
     }
 }
