@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Puddle
+  m_Name: Puddle 1
   m_Shader: {fileID: -6465566751694194690, guid: d6f04a363c18a62468d762a5103bda1a, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -122,7 +122,7 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
-    - _NoiseAmount: -111.02
+    - _NoiseAmount: -173.6
     - _NoiseMultiply: 77.62
     - _OcclusionStrength: 1
     - _Parallax: 0.005
@@ -143,11 +143,11 @@ Material:
     - _Base_Normal: {r: 1.48, g: 1.63, b: 0.4, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FlatNormal: {r: 0.2, g: 0.22, b: 0.1, a: 0}
+    - _FlatNormal: {r: 0.27, g: 0.22, b: 0.1, a: 0}
     - _IDK: {r: 0, g: 0.15, b: 0.3, a: 0}
     - _Metalic: {r: 0.2, g: 0.2, b: 0.09, a: 0}
     - _Metallic: {r: 0.77, g: 0, b: 0, a: 0}
-    - _Smoothness: {r: 1.2, g: 0, b: 0, a: 0}
+    - _Smoothness: {r: 1.05, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _Tiling: {r: -209.5, g: -1.6, b: 0, a: 0}
     - _TilingOffset: {r: -2.3, g: 1.62, b: 0, a: 0}
