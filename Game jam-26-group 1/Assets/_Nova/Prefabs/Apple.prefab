@@ -89,7 +89,7 @@ MonoBehaviour:
   agent: {fileID: 3748987694243147235}
   chaser: {fileID: 0}
   displacementDist: 5
-  script: {fileID: 0}
+  script: {fileID: 8248554352844693201}
 --- !u!114 &184579642245168080
 MonoBehaviour:
   m_ObjectHideFlags: 0
