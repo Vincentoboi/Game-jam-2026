@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1289888773384946134}
   - component: {fileID: 8563773781412675059}
   - component: {fileID: 3717998234034113187}
+  - component: {fileID: 6484113882389682188}
   m_Layer: 0
   m_Name: Cherry
   m_TagString: Untagged
@@ -87,6 +88,7 @@ MonoBehaviour:
   agent: {fileID: 4024125039927246945}
   chaser: {fileID: 0}
   displacementDist: 5
+  scream: 0
 --- !u!114 &8563773781412675059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -99,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4bb721be7189f44b9b2e3bbbc039649, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 100
+  _health: 30
   _isDead: 0
   _doDamage: 10
   _playerAnimScript: {fileID: 0}
@@ -126,6 +128,33 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 1.01, z: 0}
+--- !u!54 &6484113882389682188
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2176253232248702826}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &891936499870811462
 PrefabInstance:
   m_ObjectHideFlags: 0

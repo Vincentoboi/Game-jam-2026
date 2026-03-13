@@ -12,6 +12,8 @@ public class MainMenu : MonoBehaviour// script done by Nova
     private Button controllsButton;
     private Button exitButton;
 
+    public static bool StartButtonPressed = false;
+
     private void Awake()
     {
         VisualElement root = mainMenuDocument.rootVisualElement;// refrencing to UI toolkit
@@ -29,11 +31,11 @@ public class MainMenu : MonoBehaviour// script done by Nova
     private void ShowControllsMenu()
     {
         print("show settings menu");
-        
     }
 
     private void PlayGame()
     {
+        StartButtonPressed = true;
         SceneManager.LoadScene("TransitionLevel");//goes to new scene when pressing the start button
     }
 

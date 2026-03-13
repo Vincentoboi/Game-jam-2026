@@ -5,7 +5,6 @@ public class SceneTransisionAnim : MonoBehaviour
 {
     public Animator _playerAnim;
     public PointManager _pointManagerScript; // kept exactly as you asked
-    public FinishPoint _finishPointScript;
 
     void Start()
     {
@@ -14,12 +13,19 @@ public class SceneTransisionAnim : MonoBehaviour
     }
 
     void Update()
-    {
-        if (_finishPointScript._transitionScene)
+    { 
+
+        FinishPoint _finishPointScript = FindAnyObjectByType<FinishPoint>();
+
+        if ((_finishPointScript != null && _finishPointScript._transitionScene) || MainMenu.StartButtonPressed)
         {
             print("PlayTransAnim");
             PlayTransitionAnimation();
+
+            // Reset so it doesn't repeat
+            MainMenu.StartButtonPressed = false;
         }
+
     }
 
     void PlayTransitionAnimation()

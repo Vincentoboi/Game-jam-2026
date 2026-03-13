@@ -1,3 +1,5 @@
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class FinishPoint : MonoBehaviour
@@ -7,18 +9,22 @@ public class FinishPoint : MonoBehaviour
 
     [Header("Script Bool:")]
     public bool _transitionScene;
+    public bool _TpDone;
 
     private void OnTriggerEnter(Collider other)
     {
+
         if (other.CompareTag("Player"))
         {
             // Go to next level
             SceneController._instance.NextLevel();
         }
+
         if (other.CompareTag("Player") && _TransitionSelected) 
         {
             SceneController._instance.NextLevel();
             _transitionScene = true;
+            _TpDone = true;
         }
         else
         {

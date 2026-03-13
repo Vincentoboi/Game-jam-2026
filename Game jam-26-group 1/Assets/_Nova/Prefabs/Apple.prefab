@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5516030917719528536}
   - component: {fileID: 184579642245168080}
   - component: {fileID: 7296477020780765662}
+  - component: {fileID: -7862473348839688432}
   m_Layer: 0
   m_Name: Apple
   m_TagString: Untagged
@@ -87,6 +88,7 @@ MonoBehaviour:
   agent: {fileID: 3748987694243147235}
   chaser: {fileID: 0}
   displacementDist: 5
+  scream: 0
 --- !u!114 &184579642245168080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -99,9 +101,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4bb721be7189f44b9b2e3bbbc039649, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 100
+  _health: 60
   _isDead: 0
-  _doDamage: 10
+  _doDamage: 15
   _playerAnimScript: {fileID: 0}
 --- !u!136 &7296477020780765662
 CapsuleCollider:
@@ -126,6 +128,33 @@ CapsuleCollider:
   m_Height: 2.1700125
   m_Direction: 1
   m_Center: {x: 0.02, y: 1.0797116, z: -0.010000014}
+--- !u!54 &-7862473348839688432
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7508034603237357188}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1475642346476486230
 PrefabInstance:
   m_ObjectHideFlags: 0
