@@ -27,6 +27,16 @@ public class RunAway : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("Player");
+
+        if (player != null)
+        {
+            chaser = player.transform;
+        }
+        else
+        {
+            Debug.LogError("Player object not found in scene!");
+        }
+
         if (agent == null)
         {
             if (TryGetComponent(out agent))
@@ -35,6 +45,7 @@ public class RunAway : MonoBehaviour
             }
         }
     }
+
     private void Update()
     {
         playerInSight = Physics.CheckSphere(transform.position, sightRange, playerLayer);
