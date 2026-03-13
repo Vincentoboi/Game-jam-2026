@@ -13,7 +13,11 @@ public class MainMenu : MonoBehaviour// script done by Nova
     private Button exitButton;
 
     public static bool StartButtonPressed = false;
-
+    private void Start()
+    {
+        UnityEngine.Cursor.visible = true;
+        UnityEngine.Cursor.lockState = CursorLockMode.None;
+    }
     private void Awake()
     {
         VisualElement root = mainMenuDocument.rootVisualElement;// refrencing to UI toolkit
