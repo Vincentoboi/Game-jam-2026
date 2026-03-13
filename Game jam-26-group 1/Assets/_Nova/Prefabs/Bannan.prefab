@@ -124,7 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4bb721be7189f44b9b2e3bbbc039649, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 100
+  _health: 60
   _isDead: 0
   _doDamage: 10
   _playerAnimScript: {fileID: 0}

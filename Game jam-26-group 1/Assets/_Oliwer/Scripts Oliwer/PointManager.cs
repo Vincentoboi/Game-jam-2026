@@ -9,9 +9,6 @@ public class PointManager : MonoBehaviour
     public int _rewardingPoints = 10;
     public int _maxPoints = 100;
 
-    public bool _allDead = false;
-    public float AmountDead = 0f;
-
     [SerializeField]
     private RectTransform _barRect;
 
@@ -41,22 +38,10 @@ public class PointManager : MonoBehaviour
 
                 Debug.Log("Quest Completed for: " + h.name);
 
-                AmountDead += 1;
             }
         }
 
         UpdateBarPosition();
-
-        if (AmountDead >= 2)
-        {
-            _allDead = true;
-        }
-        FinishPoint _finishPoint = FindAnyObjectByType<FinishPoint>();
-        if (_finishPoint._TpDone)
-        {
-            _allDead = false;
-            AmountDead = 0;
-        }
     }
 
     private void UpdateBarPosition()
