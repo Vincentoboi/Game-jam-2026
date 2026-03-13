@@ -8,6 +8,8 @@ public class FinishPoint : MonoBehaviour
     [Header("Script Bool:")]
     public bool _transitionScene;
 
+    public PointManager _pointManagerScript;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -15,7 +17,8 @@ public class FinishPoint : MonoBehaviour
             // Go to next level
             SceneController._instance.NextLevel();
         }
-        if (other.CompareTag("Player") && _TransitionSelected) 
+
+        if (other.CompareTag("Player") && _TransitionSelected && _pointManagerScript._allDead) 
         {
             SceneController._instance.NextLevel();
             _transitionScene = true;
