@@ -51,6 +51,12 @@ public class PointManager : MonoBehaviour
         {
             _allDead = true;
         }
+        FinishPoint _finishPoint = FindAnyObjectByType<FinishPoint>();
+        if (_finishPoint._TpDone)
+        {
+            _allDead = false;
+            AmountDead = 0;
+        }
     }
 
     private void UpdateBarPosition()

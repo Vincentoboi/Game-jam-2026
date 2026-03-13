@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class FinishPoint : MonoBehaviour
@@ -7,6 +8,7 @@ public class FinishPoint : MonoBehaviour
 
     [Header("Script Bool:")]
     public bool _transitionScene;
+    public bool _TpDone;
 
     public PointManager _pointManagerScript;
 
@@ -22,6 +24,7 @@ public class FinishPoint : MonoBehaviour
         {
             SceneController._instance.NextLevel();
             _transitionScene = true;
+            _TpDone = true;
         }
         else
         {
