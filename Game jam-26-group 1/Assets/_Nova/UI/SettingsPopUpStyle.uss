@@ -1,0 +1,26 @@
+.hide {
+}
+
+.settings-root {
+}
+
+.settings-panel {
+}
+
+.settings-label {
+}
+
+.settings-option {
+}
+
+.settings-button {
+}
+
+.settings-button:hover {
+}
+
+.unity-slider__label {
+}
+
+.unity-toggle__label {
+}

@@ -1,0 +1,13 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/_Nova/UI/SettingsPopUpStyle.uss?fileID=7433441132597879392&amp;guid=cb27e6ba3e9464947983bd63ec986320&amp;type=3#SettingsPopUpStyle" />
+    <ui:VisualElement name="Root" class="settings-root" style="flex-grow: 1;">
+        <ui:VisualElement name="Panel" class="settings-root" style="flex-grow: 1;">
+            <ui:Label text="Label" name="SettingsText_Label" class="settings-root" />
+            <ui:Label text="Label" name="SettingText_Controll1" />
+            <ui:Label text="Label" name="SettingText_Controll2" />
+            <ui:Label text="Label" name="SettingText_Controll3" />
+            <ui:Label text="Label" name="SettingText_Controll4" />
+            <ui:Button text="Button" name="Ok_Button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
