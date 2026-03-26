@@ -1,4 +1,4 @@
-using TMPro;
+﻿using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -11,6 +11,13 @@ public class FinishPoint : MonoBehaviour
     public bool _transitionScene;
     public bool _TpDone;
 
+    PointManager _pointManager;
+
+    private void Start()
+    {
+        _pointManager = GetComponent<PointManager>();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
 
@@ -20,7 +27,7 @@ public class FinishPoint : MonoBehaviour
             SceneController._instance.NextLevel();
         }
 
-        if (other.CompareTag("Player") && _TransitionSelected) 
+        if (other.CompareTag("Player") && _TransitionSelected)
         {
             SceneController._instance.NextLevel();
             _transitionScene = true;

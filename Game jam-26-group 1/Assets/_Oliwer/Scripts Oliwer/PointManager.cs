@@ -1,11 +1,11 @@
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class PointManager : MonoBehaviour
 {
     [Header("Points")]
-    [Range(0,100)]public int _CurrentPoints = 0;
+    [Range(0, 100)] public int _CurrentPoints = 0;
     public int _rewardingPoints = 10;
     public int _maxPoints = 100;
 
@@ -46,7 +46,7 @@ public class PointManager : MonoBehaviour
 
     private void UpdateBarPosition()
     {
-        // Convert points to 0�1 range
+        // Convert points to 0–1 range
         float t = Mathf.Clamp01((float)_CurrentPoints / _maxPoints);
 
         // Interpolate between top values

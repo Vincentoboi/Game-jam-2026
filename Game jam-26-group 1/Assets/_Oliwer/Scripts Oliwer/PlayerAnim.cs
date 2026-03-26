@@ -14,12 +14,7 @@ public class PlayerAnim : MonoBehaviour
     [Header("PlayerMove: Floats")]
     public float _moveSpeed;
 
-    private PlayerAnim _playerAnim;
 
-    private void Start()
-    {
-        _playerAnim = FindObjectOfType<PlayerAnim>();
-    }
 
     void Update()
     {
