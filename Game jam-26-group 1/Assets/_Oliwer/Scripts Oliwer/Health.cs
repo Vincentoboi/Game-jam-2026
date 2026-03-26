@@ -10,11 +10,16 @@ public class Health : MonoBehaviour
     [Header("Script Variables")]
     public float _doDamage = 10f;
 
-    [Header("Knife Trigger Anim")]
-    public PlayerAnim _playerAnimScript;
-
     [Header("Death Effect")]
     public ParticleSystem _deathParticles;
+
+    [Header("")]
+    private PlayerAnim _playerAnim;
+
+    private void Start()
+    {
+        _playerAnim = FindObjectOfType<PlayerAnim>();
+    }
 
     private void Update()
     {
@@ -28,7 +33,7 @@ public class Health : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Knife"))
+        if (other.CompareTag("Knife") && _playerAnim._Atacking == true)
         {
             _health -= _doDamage;
             print("ouch!");

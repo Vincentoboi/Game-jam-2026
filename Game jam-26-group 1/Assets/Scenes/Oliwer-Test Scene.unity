@@ -493,7 +493,8 @@ MonoBehaviour:
   _health: 10
   _isDead: 0
   _doDamage: 5
-  _playerAnimScript: {fileID: 0}
+  _anim: {fileID: 0}
+  _deathParticles: {fileID: 0}
 --- !u!136 &68045306
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1343,6 +1344,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7862473348839688432, guid: b428a0ad5cccd374285f0ef836f9426f, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 184579642245168080, guid: b428a0ad5cccd374285f0ef836f9426f, type: 3}
       propertyPath: _health
       value: 20
@@ -1435,7 +1440,8 @@ MonoBehaviour:
   _health: 30
   _isDead: 0
   _doDamage: 10
-  _playerAnimScript: {fileID: 0}
+  _anim: {fileID: 0}
+  _deathParticles: {fileID: 0}
 --- !u!136 &1046951839
 CapsuleCollider:
   m_ObjectHideFlags: 0

@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class PlayerAnim : MonoBehaviour
 {
+    public bool _Atacking;
+    float _time;
+
     [Header("Needed Utils")]
     public Animator anim;
 
@@ -11,15 +14,32 @@ public class PlayerAnim : MonoBehaviour
     [Header("PlayerMove: Floats")]
     public float _moveSpeed;
 
+    private PlayerAnim _playerAnim;
+
+    private void Start()
+    {
+        _playerAnim = FindObjectOfType<PlayerAnim>();
+    }
+
     void Update()
     {
         _moveSpeed = _playerMoveScript._moveSpeed;
 
-
+        
         // Attack
         if (Input.GetButton("Fire1"))
         {
             anim.SetTrigger("Attack");
+            _Atacking = true;
+        }
+        if (_Atacking == true)
+        {
+            _time += Time.deltaTime;
+            if (_time >= 0.9f)
+            {
+                _time = 0;
+                _Atacking = false;
+            }
         }
 
         if (_moveSpeed >= 15)
