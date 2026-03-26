@@ -13,10 +13,15 @@ public class Health : MonoBehaviour
     [Header("Knife Trigger Anim")]
     public PlayerAnim _playerAnimScript;
 
+    [Header("Death Effect")]
+    public ParticleSystem _deathParticles;
+
     private void Update()
     {
         if (_health <= 0)
         {
+            Instantiate(_deathParticles, transform.position, Quaternion.identity);
+
             Destroy(gameObject);
         }
     }
