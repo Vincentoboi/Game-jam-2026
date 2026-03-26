@@ -276,6 +276,7 @@ MonoBehaviour:
   _isDead: 0
   _doDamage: 10
   _playerAnimScript: {fileID: 0}
+  _deathParticles: {fileID: 6065050823810752423, guid: 6a6b5334eb478e84f91e455fe2b8cd4a, type: 3}
 --- !u!54 &4546585083812340029
 Rigidbody:
   m_ObjectHideFlags: 0

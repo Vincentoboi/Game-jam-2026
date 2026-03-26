@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6065050823810752423}
   - component: {fileID: 752038739066818559}
   m_Layer: 0
-  m_Name: EnemyDeathEffect 2
+  m_Name: EnemyDeathEffect 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9673,7 +9673,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c488e0cd853a75641b5916fda68de92b, type: 2}
+  - {fileID: 2100000, guid: ebf75acdea749384cb777ca3096a6d7c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14564,7 +14564,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c488e0cd853a75641b5916fda68de92b, type: 2}
+  - {fileID: 2100000, guid: ebf75acdea749384cb777ca3096a6d7c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

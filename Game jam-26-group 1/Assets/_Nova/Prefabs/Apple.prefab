@@ -106,7 +106,7 @@ MonoBehaviour:
   _isDead: 0
   _doDamage: 15
   _playerAnimScript: {fileID: 0}
-  _deathParticles: {fileID: 0}
+  _deathParticles: {fileID: 6065050823810752423, guid: f92f0312ad455334eac057b90a3ec50b, type: 3}
 --- !u!136 &7296477020780765662
 CapsuleCollider:
   m_ObjectHideFlags: 0
