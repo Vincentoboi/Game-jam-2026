@@ -634,7 +634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f580818673c45d4bb62a07699a98155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _mouseSen: 100
+  _mouseSen: 80
   _player: {fileID: 1270163785802494610}
 --- !u!1 &8406094137298163286
 GameObject:
@@ -722,8 +722,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   _idleSpeed: 0
-  _walkSpeed: 10
-  _runSpeed: 15
+  _walkSpeed: 7
+  _runSpeed: 12
   _moveSpeed: 0
 --- !u!114 &19479701106693410
 MonoBehaviour:
