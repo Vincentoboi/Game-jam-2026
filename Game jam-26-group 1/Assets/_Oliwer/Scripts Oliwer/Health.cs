@@ -9,6 +9,7 @@ public class Health : MonoBehaviour
 
     [Header("Script Variables")]
     public float _doDamage = 10f;
+    public bool instanciate = false;
 
     [Header("Particle Effect")]
     public ParticleSystem _deathParticles;
@@ -24,12 +25,23 @@ public class Health : MonoBehaviour
 
     private void Update()
     {
+
+        if (instanciate)
+        {
+            Instantiate(_damageParticles, transform.position, Quaternion.identity);
+            
+        }
+        else return;
+
+
         if (_health <= 0)
         {
             Instantiate(_deathParticles, transform.position, Quaternion.identity);
 
             Destroy(gameObject);
         }
+
+        
     }
 
     private void OnTriggerEnter(Collider other)
@@ -37,9 +49,12 @@ public class Health : MonoBehaviour
         if (other.CompareTag("Knife") && _playerAnim._Atacking == true)
         {
             _health -= _doDamage;
+            instanciate = true;
             print("ouch!");
-
-            Instantiate(_damageParticles, transform.position, Quaternion.identity);
+        }
+        else
+        {
+            instanciate = false;
         }
     }
 
