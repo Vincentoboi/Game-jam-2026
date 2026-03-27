@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerAnim : MonoBehaviour
 {
     public bool _Atacking;
+    public float _attackTime;
     float _time;
 
     [Header("Needed Utils")]
@@ -30,7 +31,7 @@ public class PlayerAnim : MonoBehaviour
         if (_Atacking == true)
         {
             _time += Time.deltaTime;
-            if (_time >= 0.9f)
+            if (_time >= _attackTime)
             {
                 _time = 0;
                 _Atacking = false;

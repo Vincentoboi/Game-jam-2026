@@ -933,8 +933,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53df8f232129db942938902d5ca93c0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _Atacking: 0
+  _attackTime: 0.5
   anim: {fileID: 5829950807153659647}
-  _isAttacking: 0
   _playerMoveScript: {fileID: 5146243204063157424}
   _moveSpeed: 0
 --- !u!114 &5657480754269595206

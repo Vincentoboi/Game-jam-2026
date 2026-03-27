@@ -10,8 +10,9 @@ public class Health : MonoBehaviour
     [Header("Script Variables")]
     public float _doDamage = 10f;
 
-    [Header("Death Effect")]
+    [Header("Particle Effect")]
     public ParticleSystem _deathParticles;
+    public ParticleSystem _damageParticles;
 
     [Header("")]
     private PlayerAnim _playerAnim;
@@ -37,6 +38,8 @@ public class Health : MonoBehaviour
         {
             _health -= _doDamage;
             print("ouch!");
+
+            Instantiate(_damageParticles, transform.position, Quaternion.identity);
         }
     }
 

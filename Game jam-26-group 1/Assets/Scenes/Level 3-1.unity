@@ -2792,6 +2792,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1986905865}
     m_Modifications:
+    - target: {fileID: 1933806216826644791, guid: cac6718746d6ede4bb893d6c5b78c196, type: 3}
+      propertyPath: _health
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 5825937392296124603, guid: cac6718746d6ede4bb893d6c5b78c196, type: 3}
       propertyPath: m_Name
       value: Blueberry
@@ -5735,6 +5739,10 @@ PrefabInstance:
     - target: {fileID: 1501324337474040648, guid: 4b4feb1a42ab5264bb800a616ba365eb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5609034802783993403, guid: 4b4feb1a42ab5264bb800a616ba365eb, type: 3}
+      propertyPath: _health
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8503850681318022203, guid: 4b4feb1a42ab5264bb800a616ba365eb, type: 3}
       propertyPath: m_Name
